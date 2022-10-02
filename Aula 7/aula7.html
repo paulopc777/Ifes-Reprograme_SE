@@ -16,7 +16,7 @@
     </nav>
     <main>
         <svg width="130" height="130">
-            <circle r="50"  cx="51" cy="56" stroke="yellow" stroke-width="3" fill="Grey" />
+            <circle r="50"  cx="51" cy="56" stroke="yellow" stroke-width="3" fill="Grey"/>
         </svg>
 
         <svg width="200" height="110">
@@ -24,7 +24,7 @@
         </svg>
 
         <svg width="210" height="110">
-            <polyline points="0,40,50,0,50,0,0,40,20,101,50,101,80,101,100,42, 50,0,-37,70" stroke="purple" stroke-width="2" fill="blue"/>
+            <polyline points="0,40,50,0,50,0,0,40,20,101,50,101,80,101,100,42, 50,0,-37,70" stroke="purple" stroke-width="2" fill="blue"/>      
         </svg>
 
         <svg width="130" height="130">
@@ -34,8 +34,70 @@
         <svg width="210" height="110">
             <polyline points="0,40,30,13,0,40,50,100,50,100,105,55,84,26,57,45,30,14,0,40" stroke="purple" stroke-width="2" fill="blue"/>
         </svg>
+           <!--Barra de Click-->
+        <hr>
+            <h2>Click me</h2>
+        <svg>
+            <rect width=80 height="30" fill="yellow" stroke="black" stroke-width="4" x="10" y="10" id="r1" />
 
-    </main>
+            <animate xlink:href="#r1" 
+                 attributeName="width" from="5" to="200" dur="2s" begin="click" fill="freeze" repeatCount="1" />
+
+        </svg>
+                <!--Poligono Girando-->
+            <svg width="300" height="180">
+
+                <polygon points="50, 3, 97, 40, 80, 97, 20, 97, 3,40"  stroke="darkblue" fill="darkorange" stroke-width="1" id="pentagono"/>
+                
+                <animate xlink:href="#pentagono" attributeName="points" 
+                from="50, 3, 97, 40, 80, 97, 20, 97, 3, 40" to="97, 40, 80, 97, 20, 97, 3, 40, 50, 3" begin="0s" dur="2s" repeatCount="indefinite"/>
+        
+            </svg>
+                <!--Bolinha Pssando pro lado-->
+            <svg width="300" height="180">
+                <title>Polinha de Golf</title>
+                <rect x="0" y="0" width="300" height="100" stroke="black" stroke-width="1" />
+                <circle cx="0" cy="50" r="15" fill="blue" stroke="black" stroke-width="1">
+                  <animate
+                    attributeName="cx"
+                    from="0"
+                    to="500"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </circle>
+              </svg>
+                <!--Loading em svg-->
+                <hr>
+              <h1><u>loading Svg</u></h1>
+                <hr>
+      
+    <svg width="200" height="200"> 
+        <circle cx="85" cy="10" r="10" fill="dark" fill-opacity="0" id="circulo2" />
+        <circle cx="108" cy="20" r="10" fill="dark" fill-opacity="0" id="circulo3" />
+        <circle cx="120" cy="40" r="10" fill="dark" fill-opacity="0" id="circulo4" />
+        <circle cx="120" cy="65" r="10" fill="dark" fill-opacity="0" id="circulo5" />
+        <circle cx="108" cy="88" r="10" fill="dark" fill-opacity="0" id="circulo6" />
+        <circle cx="60" cy="100" r="10" fill="dark" fill-opacity="0" id="circulo7" />
+        <circle cx="40" cy="88" r="10" fill="dark" fill-opacity="0" id="circulo9" />
+        <circle cx="30" cy="65" r="10" fill="dark" fill-opacity="0" id="circulo11" />
+        <circle cx="85" cy="100" r="10" fill="dark" fill-opacity="0" id="circulo8" />
+        <circle cx="30" cy="40" r="10" fill="dark" fill-opacity="0" id="circulo10" />
+        <circle cx="40" cy="20" r="10" fill="dark" fill-opacity="0" id="circulo12" />
+        <circle cx="60" cy="10" r="10" fill="dark" fill-opacity="0" id="circulo1"/>
     
+        <animate xlink:href="#circulo1"attributeName="fill-opacity" to="0.1" from="1"  dur="2.4s" begin="2.4s" repeatCount="indefinite" />
+        <animate xlink:href="#circulo2"attributeName="fill-opacity" to="0.1" from="1"  dur="2.4s" begin="0.2s" repeatCount="indefinite" />
+        <animate xlink:href="#circulo3"attributeName="fill-opacity" to="0.1" from="1"  dur="2.4s" begin="0.4s" repeatCount="indefinite" />
+        <animate xlink:href="#circulo4"attributeName="fill-opacity" to="0.1" from="1"  dur="2.4s" begin="0.6s" repeatCount="indefinite" />
+        <animate xlink:href="#circulo5"attributeName="fill-opacity" to="0.1" from="1"  dur="2.4s" begin="0.8s" repeatCount="indefinite" />
+        <animate xlink:href="#circulo6"attributeName="fill-opacity"  to="0.1" from="1"  dur="2.4s" begin="1s" repeatCount="indefinite" />
+        <animate xlink:href="#circulo7" attributeName="fill-opacity" to="0.1" from="1"  dur="2.4s" begin="1.4s" repeatCount="indefinite" />
+        <animate xlink:href="#circulo8" attributeName="fill-opacity" to="0.1" from="1"  dur="2.4s" begin="1.2s" repeatCount="indefinite" />
+        <animate xlink:href="#circulo9" attributeName="fill-opacity" to="0.1" from="1"  dur="2.4s" begin="1.6s" repeatCount="indefinite" />
+        <animate xlink:href="#circulo10" attributeName="fill-opacity" to="0.1" from="1"  dur="2.4s" begin="2s" repeatCount="indefinite" />
+        <animate xlink:href="#circulo11" attributeName="fill-opacity" to="0.1" from="1"  dur="2.4s" begin="1.8s" repeatCount="indefinite" />
+        <animate xlink:href="#circulo12" attributeName="fill-opacity" to="0.1" from="1"  dur="2.4s" begin="2.2s" repeatCount="indefinite" />
+    </svg>
+    </main>  
 </body>
 </html>
